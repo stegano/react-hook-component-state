@@ -20,8 +20,9 @@ git clone https://github.com/stegano/react-hook-component-state.git
 ```
 
 ## Examples
-### with MUI Backdrop Component
 To use the Backdrop or Dialog component, you need to create and use an `open` state value. You can quickly and easily create a component with a state by using the `use-component-state` hook without creating an `open` state value inside the current component.
+
+### with MUI Backdrop Component
 ```ts
 const SomeComponent = () => {
   ...
@@ -52,7 +53,7 @@ const SomeComponent = () => {
   ...
   const [$dialog, setBackdropOpen] = useComponentState<{
     isOpen: boolean, content: string
-    }>(
+  }>(
     ({ isOpen, content }, setState) => {
       /**
        * MUI Dialog Component
