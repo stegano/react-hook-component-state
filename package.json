@@ -1,6 +1,6 @@
 {
   "name": "react-hook-component-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This hook allows you to isolate and manage the state within the component, reducing rendering operations and keeping the source code concise.",
   "main": "dist/index.js",
   "scripts": {
