@@ -1,0 +1,47 @@
+{
+  "name": "react-hook-component-state",
+  "version": "1.0.0",
+  "description": "This hook allows you to isolate and manage the state within the component, reducing rendering operations and keeping the source code concise.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "pre-commit": "lint-staged",
+    "build": "rm -rf ./dist && babel src --out-dir dist --extensions \".ts\"",
+    "publish": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stegano/react-hook-component-state.git"
+  },
+  "author": "Yongwoo Jung<stegano@naver.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stegano/react-hook-component-state/issues"
+  },
+  "homepage": "https://github.com/stegano/react-hook-component-state#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "react": "^17.0.2",
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "babel-preset-minify": "^0.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "typescript": "^4.4.3"
+  },
+  "keywords": [
+    "redux",
+    "component",
+    "mui",
+    "ant"
+  ],
+  "types": "./src/index.ts"
+}
